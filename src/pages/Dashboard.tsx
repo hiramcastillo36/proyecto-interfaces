@@ -1,3 +1,4 @@
+import Button from "../components/Button/Button";
 import DoughnutChart from "../components/DoughnutChart/DoughnutChart";
 import Header from "../components/header/header";
 import Table from "../components/table/table";
@@ -38,6 +39,29 @@ function Dashboard() {
                 value={50}
             />
         </div>
+
+        <Button
+  variant="default"
+  size="md"
+  fullWidth={false}
+  isLoading={false}
+  disabled={false}
+    onClick={() => alert('Button clicked!')}
+>
+  Submit
+</Button>
+
+<Button
+  variant="default"
+  size="md"
+  fullWidth={false}
+  isLoading={false}
+  disabled={true}
+    onClick={() => alert('Button clicked!')}
+>
+  Submit
+</Button>
+
 
 
     </div>
