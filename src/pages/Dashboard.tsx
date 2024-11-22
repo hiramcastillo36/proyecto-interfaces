@@ -33,12 +33,10 @@ function Dashboard() {
 
             }}
         >
-            <DoughnutChart data={[
-                { name: 'A', value: 10, color: 'red' },
-                { name: 'B', value: 20, color: 'blue' },
-                { name: 'C', value: 30, color: 'green' },
-                { name: 'D', value: 40, color: 'orange' }
-            ]} />
+            <DoughnutChart
+                name='BD'
+                value={50}
+            />
         </div>
 
 

@@ -2,30 +2,47 @@
 import React from 'react';
 import './DoughnutChart.css';
 
-interface DataItem {
-  name: string;
-  value: number;
-  color: string;
-}
-
 interface DoughnutChartProps {
-  data: DataItem[];
-  size?: number;
+    name: string;
+    value: number;
 }
 
-const DoughnutChart: React.FC<DoughnutChartProps> = ({
-  data,
-}) => {
-
+const DoughnutChart: React.FC<DoughnutChartProps> = ({ name, value }) => {
   return (
+    <div
+    style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column'
+
+    }}
+    className='principal'
+    >
+    <div style={
+            {
+                display: 'flex',
+                justifyContent: 'center',
+                width: '50%',
+                marginBottom: '80px'
+            }
+        }>
+            <p className='title'>
+                {name}
+            </p>
+        </div>
     <div className='container'>
-         <p>Donut Chart</p>
-        <svg xmlns="http://www.w3.org/2000/svg">
-        <circle  cx="400" cy="400" className="donut" r="300" stroke-width="60" stroke="#ff8c69" fill="none"/>
-        <circle  cx="400" cy="400" className="donut" r="300" stroke-width="60" stroke="#ffff00" fill="none"/>
-        <circle  cx="400" cy="400" className="donut" r="300" stroke-width="60" stroke="#008000" fill="none"/>
-        <circle  cx="400" cy="400" className="donut" r="300" stroke-width="60" stroke="#87CEFA" fill="none"/>
-        </svg>
+        <div className='containerChart'>
+            <p>
+                {value}%
+            </p>
+            <svg xmlns="http://www.w3.org/2000/svg">
+            <circle  cx="150" cy="150" className="donut" r="80" stroke-width="10" stroke="#183B6B" fill="none"/>
+            <circle  cx="150" cy="150" className="donut" r="80" stroke-width="10" stroke="#183B6B" fill="none"/>
+            <circle  cx="150" cy="150" className="donut" r="80" stroke-width="10" stroke="#00B2E2" fill="none"/>
+            </svg>
+        </div>
+    </div>
     </div>
   );
 };
