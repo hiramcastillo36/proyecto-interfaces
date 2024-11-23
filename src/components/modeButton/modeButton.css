@@ -1,0 +1,54 @@
+:root {
+    --theme-light-color: white;
+    --theme-dark-color: black;
+    --icon-color-light: black;
+    --icon-color-dark: white;
+  }
+  
+  .modeButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modeButton:hover {
+    transform: scale(1.05);
+  }
+  
+  .modeButton-rectangle {
+    width: 87px;
+    height: 36px;
+    border-radius: 80px;
+    background-color: var(--theme-light-color); 
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    padding: 0 8px; /* Espaciado interno opcional */
+  }
+  
+  .modeButton.light .modeButton-rectangle {
+    background-color: var(--theme-light-color);
+    justify-content: flex-start; /* Ícono a la izquierda */
+  }
+  
+  .modeButton.dark .modeButton-rectangle {
+    background-color: var(--theme-dark-color);
+    justify-content: flex-end; /* Ícono a la derecha */
+  }
+  
+  .modeButton-icon {
+    width: 20px;
+    height: 20px;
+    color: var(--icon-color-light);
+    transition: color 0.3s ease;
+  }
+  
+  .modeButton.dark .modeButton-icon {
+    color: var(--icon-color-dark);
+  }
+  

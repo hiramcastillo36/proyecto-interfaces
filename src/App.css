@@ -1,8 +1,15 @@
+:root {
+  --background: white;
+  --text: black;
+}
+
+[data-theme='dark'] {
+  --background: rgba(0, 0, 0, 0.880);
+  --text: white;
+}
+
 #root {
-
-    width: 100vw;
-
-
+  width: 100vw;
   text-align: center;
   --pi: 3.14159265359;
     --a1: 50;
@@ -20,6 +27,7 @@
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -45,4 +53,49 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* Contenedor Principal del Dashboard */
+.dashboard-container {
+  display: flex;
+  height: 100vh; /* Altura completa de la ventana */
+}
+
+/* Contenedor Principal del Contenido */
+.dashboard-main {
+  margin-left: 74px; /* Espacio reservado para el menú */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px; /* Espaciado interno */
+  overflow-y: auto; /* Habilita scroll si es necesario */
+}
+
+/* Contenedor del Gráfico */
+.chart-container {
+  display: flex;
+  justify-content: center;
+  width: 50%; /* Ocupará el 50% del ancho de la pantalla */
+  margin: 0 auto; /* Centrado horizontal */
+}
+
+/* Área Interna del Gráfico */
+.chart-inner {
+  width: 1000px;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Nuevos estilos para el tema */
+body {
+  background-color: var(--background);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Si necesitas estilos específicos para el header en modo oscuro */
+[data-theme='dark'] .header {
+  background-color: var(--background);
 }
