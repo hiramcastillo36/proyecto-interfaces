@@ -1,36 +1,59 @@
-/* Contenedor del menú */
+/* Estilos principales del menú */
 .menu {
-    width: 74px; /* Ancho del menú cuando está contraído */
+    width: 74px;
     height: 100vh;
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     transition: width 0.3s ease;
     overflow: hidden;
+    padding: 14px;
 }
 
 .menu-expanded {
-    width: 200px; /* Ancho del menú cuando está expandido */
+    width: 200px;
 }
 
-/* Elementos del menú */
-.menu-item {
+.menu-header {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 20px 0;
-    padding: 10px;
-    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
     width: 100%;
-    justify-content: start;
-    transition: background-color 0.3s ease;
 }
 
-.menu-item:hover {
-    background-color: #f0f0f0;
+.menu-header h2 {
+    margin: 0;
+    font-size: 18px;
+    text-align: left; 
+}
+
+.menu-toggle-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+    padding: 10px;
+}
+
+
+.menu-content {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding-bottom: 14px;
+    
 }
 
 .menu-item img {
@@ -38,13 +61,33 @@
     height: 24px;
 }
 
+.menu-item-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding-left: 20px;
+}
+
+.menu-expanded .menu-item-label {
+    opacity: 1;
+}
+
 .menu-item span {
     font-size: 14px;
     font-weight: bold;
     color: #000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.menu-toggle {
-    font-weight: bold;
-    cursor: pointer;
+.logout-expanded {
+    background-color: #A7A7A7;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.logout-expanded:hover {
+    background-color: #d6d6d6;
 }

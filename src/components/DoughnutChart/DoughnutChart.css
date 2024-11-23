@@ -1,12 +1,7 @@
-<<<<<<< HEAD
-=======
-
 .principal:hover {
     border: 5px solid #183B6B;
     border-radius: 50px;
 }
-
->>>>>>> origin/hiram
 .container {
     display: flex;
     justify-content: center;

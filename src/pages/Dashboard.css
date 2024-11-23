@@ -1,0 +1,33 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .main-container {
+    display: flex; /* Divide en columnas */
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo de la página */
+  }
+  
+  .content-container {
+    flex: 0.7; /* El contenido ocupa más espacio */
+    padding: 20px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Gráficas en grid */
+    gap: 20px;
+    justify-items: center; /* Centrar las gráficas */
+    width: 100%;
+  }
+  

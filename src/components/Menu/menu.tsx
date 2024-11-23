@@ -12,26 +12,37 @@ const Menu: React.FC = () => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     const menuItems = [
-        { icon: isExpanded ? Left : Right, label: '' }, // Cambiamos el ícono dinámicamente
         { icon: Grid, label: 'Dashboard' },
         { icon: Bell, label: 'Notificaciones' },
         { icon: Folder, label: 'Grupos' },
         { icon: Settings, label: 'Configuración' },
-        { icon: LogOut, label: 'Salir' },
+        { icon: LogOut, label: 'Salir', isLogout: true },
     ];
 
     return (
         <div className={`menu ${isExpanded ? "menu-expanded" : ""}`}>
-            {menuItems.map((item, index) => (
-                <div
-                    key={index}
-                    className={`menu-item ${index === 0 ? "menu-toggle" : ""}`}
-                    onClick={index === 0 ? () => setIsExpanded(!isExpanded) : undefined}
-                >
-                    <img src={item.icon} alt={item.label} />
-                    {isExpanded && <span>{item.label}</span>}
-                </div>
-            ))}
+            <div className="menu-header">
+                {isExpanded && <h2>Dashboard</h2>}
+                <img
+                    src={isExpanded ? Left : Right}
+                    alt="Toggle Menu"
+                    className="menu-toggle-icon"
+                    onClick={() => setIsExpanded(!isExpanded)}
+                />
+            </div>
+
+            {/* Contenido del menú */}
+            <div className="menu-content">
+                {menuItems.map((item, index) => (
+                    <div
+                        key={index}
+                        className={`menu-item ${item.isLogout ? (isExpanded ? "logout-expanded" : "") : ""}`}
+                    >
+                        <img src={item.icon} alt={item.label} />
+                        {isExpanded && <span className="menu-item-label">{item.label}</span>}
+                    </div>
+                ))}
+            </div>
         </div>
     );
 };
