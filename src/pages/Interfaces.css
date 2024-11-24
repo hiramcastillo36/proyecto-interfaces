@@ -1,9 +1,7 @@
  .content-container {
-    flex: 1;
-    padding: 20px 40px;
     background-color: #ffffff;
   }
-  
+
   .interfaces-title {
     font-size: 2rem;
     font-weight: bold;
@@ -11,7 +9,7 @@
     margin-bottom: 30px;
     color: #333;
   }
-  
+
   .interfaces-buttons {
     display: flex;
     justify-content: flex-start;
@@ -19,7 +17,7 @@
     margin-bottom: 30px;
     padding: 0 20px;
   }
-  
+
   /* Estilos adicionales para mejorar la apariencia de la tabla */
   .table {
     width: 100%;
@@ -29,9 +27,9 @@
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 12px; 
+    font-size: 12px;
   }
-  
+
   .table thead th {
     background-color: #183B6B;
     font-size: 12px;
@@ -41,14 +39,12 @@
     color: #ffffff;
     border-bottom: 2px solid #e0e0e0;
   }
-  
+
   .table tbody td {
     padding: 12px 15px;
     border-bottom: 1px solid #e0e0e0;
   }
-  
+
   .table tbody tr:hover {
     background-color: #f9f9f9;
   }
-
- 

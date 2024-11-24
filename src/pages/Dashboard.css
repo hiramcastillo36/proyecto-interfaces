@@ -4,18 +4,17 @@
     align-items: center;
     width: 100%;
   }
-  
+
   .main-container {
-    display: flex; 
+    display: flex;
     width: 100%;
   }
-  
+
   .content-container {
-    flex: 0.7; 
-    padding: 20px;
-    overflow-y: auto; 
+    overflow-y: auto;
+    width: 100%;
   }
-  
+
   .section-title {
     font-size: 24px;
     font-weight: bold;
@@ -24,20 +23,18 @@
   }
 
   .dashboard-title {
-    font-size: 32px; 
+    font-size: 32px;
     font-weight: bold;
     text-align: center;
-    margin: 20px 0; 
+    margin: 20px 0;
     color: #000;
-    text-transform: uppercase; 
+    text-transform: uppercase;
   }
-  
+
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-    gap: 40px; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
     justify-items: center;
     width: 100%;
   }
-
-  
