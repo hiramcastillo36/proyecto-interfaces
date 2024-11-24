@@ -6,14 +6,14 @@
   }
   
   .main-container {
-    display: flex; /* Divide en columnas */
+    display: flex; 
     width: 100%;
-    max-width: 1200px; /* Ancho máximo de la página */
   }
   
   .content-container {
-    flex: 0.7; /* El contenido ocupa más espacio */
+    flex: 0.7; 
     padding: 20px;
+    overflow-y: auto; 
   }
   
   .section-title {
@@ -22,12 +22,22 @@
     text-align: center;
     margin: 20px 0;
   }
+
+  .dashboard-title {
+    font-size: 32px; 
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0; 
+    color: #000;
+    text-transform: uppercase; 
+  }
   
   .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Gráficas en grid */
-    gap: 20px;
-    justify-items: center; /* Centrar las gráficas */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 40px; 
+    justify-items: center;
     width: 100%;
   }
+
   
