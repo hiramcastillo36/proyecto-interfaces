@@ -22,10 +22,13 @@
   --background: var(--light-bg);
   --text: var(--light-text);
 
+  --azul-oscuro: #183B6B;
+  --azul: #004A98;
+  --azul-claro: #00B2E2;
+
   body.light-mode {
     --icon-filter: none;
   }
-
 }
 body.light-mode {
   --background: var(--light-bg);

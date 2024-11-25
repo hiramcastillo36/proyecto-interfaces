@@ -1,5 +1,5 @@
 .principal:hover {
-    border: 5px solid #183B6B;
+    border: 5px solid var(--azul-oscuro);
     border-radius: 50px;
     width: 213px;
 }
@@ -30,7 +30,7 @@
     align-items: center;
   }
 
-  p {
+  .textChart {
     position: absolute;
     font-size: 20px;
     font-weight: 800;

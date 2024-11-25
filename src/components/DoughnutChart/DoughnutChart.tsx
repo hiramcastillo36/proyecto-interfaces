@@ -5,9 +5,11 @@ import './DoughnutChart.css';
 interface DoughnutChartProps {
     name: string;
     value: number;
+    color? : string;
+    bg? : string;
 }
 
-const DoughnutChart: React.FC<DoughnutChartProps> = ({ name, value }) => {
+const DoughnutChart: React.FC<DoughnutChartProps> = ({ name, value, color, bg }) => {
   return (
     <div
     style={{
@@ -23,7 +25,7 @@ const DoughnutChart: React.FC<DoughnutChartProps> = ({ name, value }) => {
                 display: 'flex',
                 justifyContent: 'center',
                 width: '50%',
-                marginBottom: '80px'
+                marginBottom: '30px'
             }
         }>
             <p className='title'>
@@ -32,13 +34,13 @@ const DoughnutChart: React.FC<DoughnutChartProps> = ({ name, value }) => {
         </div>
     <div className='container'>
         <div className='containerChart'>
-            <p>
+            <p className='textChart'>
                 {value}%
             </p>
             <svg xmlns="http://www.w3.org/2000/svg">
-            <circle  cx="150" cy="150" className="donut" r="80" strokeWidth="10" stroke="#183B6B" fill="none"/>
-            <circle  cx="150" cy="150" className="donut" r="80" strokeWidth="10" stroke="#183B6B" fill="none"/>
-            <circle  cx="150" cy="150" className="donut" r="80" strokeWidth="10" stroke="#00B2E2" fill="none"/>
+            <circle  cx="150" cy="150" className="donut" r="80" strokeWidth="10" stroke={color} fill="none"/>
+            <circle  cx="150" cy="150" className="donut" r="80" strokeWidth="10" stroke="var(--azul-oscuro)" fill="none"/>
+            <circle  cx="150" cy="150" className="donut" r="80" strokeWidth="10" stroke={bg} fill="none"/>
             </svg>
         </div>
     </div>
