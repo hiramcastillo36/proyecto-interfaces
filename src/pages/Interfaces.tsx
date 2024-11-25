@@ -4,7 +4,6 @@ import Button from "../components/Button/Button";
 import "./Interfaces.css";
 
 const Interfaces = () => {
-  // Datos de ejemplo para la tabla - ajusta según tus necesidades
   const headers = ["Nombre", "Promedio", "Tareas", "Faltas"];
   const data = [
     ["Ivan Linares", "84", "2/3", "1"],
@@ -17,7 +16,6 @@ const Interfaces = () => {
     <div className="dashboard">
       <div className="main-container">
         <aside className="menu-container">
-          {/* Aquí puedes agregar tu menú lateral si lo necesitas */}
         </aside>
 
         <main className="content-container">

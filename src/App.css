@@ -1,24 +1,50 @@
 :root {
+
   --background: white;
   --text: black;
-}
 
-[data-theme='dark'] {
-  --background: rgba(0, 0, 0, 0.880);
-  --text: white;
-}
-
-#root {
-  width: 100vw;
-  text-align: center;
   --pi: 3.14159265359;
   --a1: 6;
   --a2: 25;
   --a3: 10;
   --a4: 5;
-    --a1: 50;
-    --a2: 15;
-    --a3: 35;
+
+  --a1: 50;
+  --a2: 15;
+  --a3: 35;
+
+  --light-bg: white;
+  --light-text: black;
+
+  --dark-bg: #2d2d2d;
+  --dark-text: white;
+
+  --background: var(--light-bg);
+  --text: var(--light-text);
+
+  body.light-mode {
+    --icon-filter: none; 
+  }
+
+}
+body.light-mode {
+  --background: var(--light-bg);
+  --text: var(--light-text);
+}
+
+body.dark-mode {
+  --background: var(--dark-bg);
+  --text: var(--dark-text);
+}
+
+body.dark-mode {
+  --icon-filter: invert(1); 
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .logo {
@@ -51,53 +77,4 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
 
-.read-the-docs {
-  color: #888;
-}
-
-/* Contenedor Principal del Dashboard */
-.dashboard-container {
-  display: flex;
-  height: 100vh; /* Altura completa de la ventana */
-}
-
-/* Contenedor Principal del Contenido */
-.dashboard-main {
-  margin-left: 74px; /* Espacio reservado para el menú */
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 20px; /* Espaciado interno */
-  overflow-y: auto; /* Habilita scroll si es necesario */
-}
-
-.chart-container {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  margin: 0 auto;
-}
-
-.chart-inner {
-  width: 1000px;
-  height: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-body {
-  background-color: var(--background);
-  color: var(--text);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-
-[data-theme='dark'] .header {
-  background-color: var(--background);
-}

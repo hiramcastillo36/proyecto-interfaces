@@ -33,16 +33,18 @@ const Menu: React.FC<{ setView: (view: string) => void }> = ({ setView }) => {
       </div>
 
       <div className="menu-content">
-        {menuItems.map((item, index) => (
-          <div
-            key={index}
-            className={`menu-item ${item.isLogout ? (isExpanded ? "logout-expanded" : "") : ""}`}
-            onClick={() => item.view && setView(item.view)}
-          >
-            <img src={item.icon} alt={item.label} />
-            {isExpanded && <span className="menu-item-label">{item.label}</span>}
-          </div>
-        ))}
+        <div className="menu-items-container"> 
+          {menuItems.map((item, index) => (
+            <div
+              key={index}
+              className={`menu-item ${item.isLogout ? (isExpanded ? "logout-expanded" : "") : ""}`}
+              onClick={() => item.view && setView(item.view)}
+            >
+              <img src={item.icon} alt={item.label} />
+              {isExpanded && <span className="menu-item-label">{item.label}</span>}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

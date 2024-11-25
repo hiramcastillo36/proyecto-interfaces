@@ -4,7 +4,7 @@ import "./Card.css";
 type CardProps = {
   title: string;
   imageSrc: string;
-  onNavigate?: () => void; // Nuevo prop para manejar la navegación
+  onNavigate?: () => void; 
 };
 
 const Card: React.FC<CardProps> = ({ title, imageSrc, onNavigate }) => {
@@ -13,7 +13,6 @@ const Card: React.FC<CardProps> = ({ title, imageSrc, onNavigate }) => {
   const handleCardClick = () => {
     setIsSelected(!isSelected);
     
-    // Si es la card de INTERFACES, ejecutamos la navegación
     if (title === "INTERFACES" && onNavigate) {
       onNavigate();
     }
