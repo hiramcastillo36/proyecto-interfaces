@@ -22,7 +22,7 @@ function Dashboard() {
               <DoughnutChart name="ROBÓTICA" value={50} />
               <DoughnutChart name="WEB" value={94} />
             </div>
-
+            <div className="section"></div>
             <h1 className="section-title">PROMEDIOS GENERALES</h1>
             <div className="grid-container">
               <DoughnutChart name="BD" value={75} />
