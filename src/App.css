@@ -23,7 +23,7 @@
   --text: var(--light-text);
 
   body.light-mode {
-    --icon-filter: none; 
+    --icon-filter: none;
   }
 
 }
@@ -38,7 +38,7 @@ body.dark-mode {
 }
 
 body.dark-mode {
-  --icon-filter: invert(1); 
+  --icon-filter: invert(1);
 }
 
 body {
@@ -77,4 +77,6 @@ body {
   }
 }
 
-
+.App {
+    width: 100vw;
+}
