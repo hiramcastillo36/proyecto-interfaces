@@ -1,42 +1,39 @@
-/* Tabla base */
 .table {
-    width: 100%;
+    width: 976px;
+    height: 235px; 
     border-collapse: collapse;
     color: black;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+    margin: 0 auto; 
+    transition: width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover para agrandar la tabla */
 .table:hover {
-    transform: scale(1.05); /* Aumenta el tamaño en un 5% */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
+    max-height: 280px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-/* Encabezados */
 .table th {
     background-color: #183B6B;
     font-weight: bold;
     padding: 0.5em;
     color: white;
-    font-size: 24px; /* Tamaño base */
-    transition: font-size 0.3s ease; /* Animación suave del tamaño */
+    font-size: 24px;
+    transition: font-size 0.3s ease; 
 }
 
-/* Cambia el tamaño de fuente del encabezado al hacer hover */
 .table:hover th {
-    font-size: 32px; /* Tamaño agrandado en hover */
+    font-size: 32px; 
 }
 
-/* Celdas del cuerpo */
+
 .table td {
     padding: 0.5em;
     border-bottom: 1px solid #f0f0f0;
-    font-size: 16px; /* Tamaño base */
-    transition: font-size 0.3s ease; /* Animación suave del tamaño */
+    font-size: 16px; 
+    transition: font-size 0.3s ease; 
 }
 
-/* Cambia el tamaño de fuente de las celdas al hacer hover */
 .table:hover td {
-    font-size: 24px; /* Tamaño agrandado en hover */
+    font-size: 24px; 
 }

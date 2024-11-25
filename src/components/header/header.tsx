@@ -1,7 +1,7 @@
 import './header.css';
 import logoF1 from '../../assets/images/logoFI1.png';
 import UASLPLogo1 from '../../assets/images/UASLPLogo1.png';
-import ModeButton from '../modeButton/modeButton'; // Importa el componente correctamente
+import SwitchButton from '../switchButton/switchButton';
 
 function Header() {
   return (
@@ -10,7 +10,7 @@ function Header() {
         <img src={UASLPLogo1} className="logo" alt="logo" />
         <img src={logoF1} className="logo" alt="logo" />
         <div className="modeButton-container">
-        <ModeButton /> 
+        <SwitchButton /> 
         </div>
       </header>
     </>

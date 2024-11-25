@@ -7,20 +7,23 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: 30px;
-    color: #333;
+    color: var(--text); 
   }
 
   .interfaces-buttons {
     display: flex;
     justify-content: flex-start;
-    gap: 15px;
+    gap: 220px;
     margin-bottom: 30px;
     padding: 0 20px;
   }
 
-  /* Estilos adicionales para mejorar la apariencia de la tabla */
   .table {
-    width: 100%;
+    
+    position: relative;
+    top: 50px;
+    width: 976px;
+    height: 235px; 
     border-collapse: separate;
     border-spacing: 0;
     background-color: white;

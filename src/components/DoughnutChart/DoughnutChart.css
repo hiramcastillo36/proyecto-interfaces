@@ -1,7 +1,10 @@
 .principal:hover {
     border: 5px solid #183B6B;
     border-radius: 50px;
+    width: 213px;
+    height: 252px;
 }
+
 .container {
     display: flex;
     justify-content: center;
@@ -14,7 +17,8 @@
 .title {
     font-size: 35px;
     font-weight: 800;
-    color: black;
+    color: var(--text);
+    padding-top: 27px;
 }
 
 
@@ -31,7 +35,7 @@
     position: absolute;
     font-size: 20px;
     font-weight: 800;
-    color: black;
+    color: var(--text);
   }
 
 svg {
@@ -64,10 +68,6 @@ svg {
     transform-origin: center center;
     stroke-dashoffset: 0;
     cursor: pointer;
-  }
-
-  .donut:nth-child(1) {
-
   }
 
   .donut:nth-child(2) {

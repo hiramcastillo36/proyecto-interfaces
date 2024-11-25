@@ -7,7 +7,6 @@ interface TableProps {
     data: string[][];
 }
 
-
 const Table: React.FC<TableProps> = ({ headers, data }) => {
     return (
         <table className='table'>
