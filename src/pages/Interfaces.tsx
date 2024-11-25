@@ -1,7 +1,7 @@
 import React from "react";
-import Table from "../components/table/table"; 
-import Button from "../components/Button/Button"; 
-import "./Interfaces.css"; 
+import Table from "../components/table/table";
+import Button from "../components/Button/Button";
+import "./Interfaces.css";
 
 const Interfaces = () => {
   // Datos de ejemplo para la tabla - ajusta según tus necesidades
@@ -19,37 +19,37 @@ const Interfaces = () => {
         <aside className="menu-container">
           {/* Aquí puedes agregar tu menú lateral si lo necesitas */}
         </aside>
-        
+
         <main className="content-container">
           <h1 className="interfaces-title">Diseño de Interfaces</h1>
-          
+
           <div className="interfaces-buttons">
-            <Button 
-              variant="default" 
+            <Button
+              variant="default"
               size="md"
               onClick={() => console.log("Inicio")}
             >
               Nuevo
             </Button>
-            
-            <Button 
-              variant="default" 
+
+            <Button
+              variant="default"
               size="md"
               onClick={() => console.log("Tareas")}
             >
               Editar
             </Button>
-            
-            <Button 
-              variant="default" 
+
+            <Button
+              variant="default"
               size="md"
               onClick={() => console.log("Calificaciones")}
             >
               Eliminar
             </Button>
-            
-            <Button 
-              variant="default" 
+
+            <Button
+              variant="default"
               size="md"
               onClick={() => console.log("Asistencia")}
             >
@@ -57,7 +57,10 @@ const Interfaces = () => {
             </Button>
           </div>
 
-          <Table headers={headers} data={data} />
+            <div className="content-table">
+                <Table headers={headers} data={data} />
+            </div>
+
         </main>
       </div>
     </div>

@@ -8,11 +8,25 @@
 }
 
 [data-theme='dark'] .header {
-    background-color: #002A56; 
+    background-color: #002A56;
   }
 
   .modeButton-container {
     display: flex;
     align-items: center;
     padding: 0 1rem;
+}
+
+/*
+responsive design
+*/
+@media (max-width: 768px) {
+
+    .modeButton-container {
+        padding: 0;
+    }
+
+    img {
+        width: 100px;
+    }
 }

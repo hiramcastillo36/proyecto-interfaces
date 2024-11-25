@@ -1,5 +1,8 @@
  .content-container {
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .interfaces-title {
@@ -12,10 +15,11 @@
 
   .interfaces-buttons {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 15px;
     margin-bottom: 30px;
     padding: 0 20px;
+    width: 100%;
   }
 
   /* Estilos adicionales para mejorar la apariencia de la tabla */
@@ -38,7 +42,7 @@
     font-weight: 600;
     color: #ffffff;
     border-bottom: 2px solid #e0e0e0;
-  }
+  }°
 
   .table tbody td {
     padding: 12px 15px;
@@ -48,3 +52,31 @@
   .table tbody tr:hover {
     background-color: #f9f9f9;
   }
+
+
+  .content-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
+
+  /*
+  responsive design
+  */
+
+    @media (max-width: 768px) {
+        .content-table{
+        width: 100%;
+        }
+
+        .interfaces-buttons {
+            flex-direction: column;
+            gap: 10px;
+            padding: 0;
+        }
+
+        .content-container {
+            padding: 0 20px;
+        }
+    }
