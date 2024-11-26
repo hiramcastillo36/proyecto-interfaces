@@ -65,7 +65,7 @@ nombre-del-proyecto/
 - TypeScript 5.x
 - Vite
 
-##Comentarios finales 
+# Comentarios finales
 
 Se observo el prototipo inicial y se analizaron ciertas áreas de mejoras: 
 
