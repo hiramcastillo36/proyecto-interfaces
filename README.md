@@ -65,9 +65,11 @@ nombre-del-proyecto/
 - TypeScript 5.x
 - Vite
 
-# Comentarios finales
+
+## Comentarios finales
 
 Se observo el prototipo inicial y se analizaron ciertas áreas de mejoras: 
+
 
 1.⁠ ⁠Barra de Búsqueda 
 
@@ -79,13 +81,15 @@ Incluir una barra de búsqueda en la parte superior de las secciones relevantes 
 facilitar la localización de contenido específico. 
 
 
-2. Claridad en los Nombres de los Cursos
+
+2.⁠ ⁠Claridad en los nombres de los cursos 
 
 Observación:
 Los nombres de los cursos se superponen con las imágenes o no son lo suficientemente claros, lo que dificulta identificar rápidamente el contenido. 
 
 Recomendación:
 Separar los nombres de los cursos de las imágenes, colocándolos fuera de estas en un área dedicada, como la parte inferior de una tarjeta (card). Usar un contraste adecuado entre el texto y el fondo para asegurar la legibilidad. 
+
 
 
 3.⁠ ⁠Distribución de las Gráficas
