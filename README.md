@@ -68,7 +68,7 @@ nombre-del-proyecto/
 
 ## Comentarios finales
 
-Se observo el prototipo inicial y se analizaron ciertas áreas de mejoras: 
+Se observo el prototipo inicial y se analizarón ciertas áreas de mejoras: 
 
 
 1.⁠ ⁠Barra de Búsqueda 
@@ -88,14 +88,4 @@ Observación:
 Los nombres de los cursos se superponen con las imágenes o no son lo suficientemente claros, lo que dificulta identificar rápidamente el contenido. 
 
 Recomendación:
-Separar los nombres de los cursos de las imágenes, colocándolos fuera de estas en un área dedicada, como la parte inferior de una tarjeta (card). Usar un contraste adecuado entre el texto y el fondo para asegurar la legibilidad. 
-
-
-
-3.⁠ ⁠Distribución de las Gráficas
-
-Observación:
-Las gráficas están alineadas en una fila horizontal sin suficiente espacio o separación clara entre cada una. Esto genera una percepción de saturación visual, especialmente en dispositivos pequeños o al tener múltiples gráficas en una misma vista.
-
-Recomendación:
-Distribuir las gráficas en un diseño de cuadrícula (grid) responsiva que permita adaptarse al tamaño de la pantalla o sección correspondiente que pueda abrirse.
+Separar los nombres de los cursos de las imágenes, colocándolos fuera de estas en un área dedicada, como la parte inferior de una card. Usar un contraste adecuado entre el texto y el fondo para asegurar la legibilidad. 
