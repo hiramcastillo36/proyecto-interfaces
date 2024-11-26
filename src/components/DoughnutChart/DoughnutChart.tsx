@@ -24,8 +24,9 @@ const DoughnutChart: React.FC<DoughnutChartProps> = ({ name, value, color, bg })
             {
                 display: 'flex',
                 justifyContent: 'center',
-                width: '50%',
-                marginBottom: '30px'
+                width: '15%',
+                height: '10%',
+                marginBottom: '30px',
             }
         }>
             <p className='title'>
@@ -38,9 +39,8 @@ const DoughnutChart: React.FC<DoughnutChartProps> = ({ name, value, color, bg })
                 {value}%
             </p>
             <svg xmlns="http://www.w3.org/2000/svg">
-            <circle  cx="150" cy="150" className="donut" r="80" strokeWidth="10" stroke={color} fill="none"/>
-            <circle  cx="150" cy="150" className="donut" r="80" strokeWidth="10" stroke="var(--azul-oscuro)" fill="none"/>
-            <circle  cx="150" cy="150" className="donut" r="80" strokeWidth="10" stroke={bg} fill="none"/>
+            <circle  cx="150" cy="100" className="donut" r="75" strokeWidth="10" stroke={color} fill="none"/>
+            <circle  cx="150" cy="100" className="donut" r="75" strokeWidth="10" stroke={bg} fill="none"/>
             </svg>
         </div>
     </div>

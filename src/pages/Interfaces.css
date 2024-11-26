@@ -71,6 +71,7 @@
     @media (max-width: 768px) {
         .content-table{
         width: 100%;
+        padding: 0 20px;
         }
 
         .interfaces-buttons {
@@ -79,7 +80,4 @@
             padding: 0;
         }
 
-        .content-container {
-            padding: 0 20px;
-        }
     }

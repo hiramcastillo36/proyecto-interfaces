@@ -26,16 +26,18 @@ const Menu: React.FC<{ setView: (view: string) => void }> = ({ setView }) => {
       <div className={`menu ${isExpanded ? "menu-expanded" : ""}`}>
         <div className="menu-header">
           {isExpanded && <h2>Dashboard</h2>}
-          <img
-            src={isExpanded ? Left : Right}
-            alt="Toggle Menu"
-            className="menu-toggle-icon"
-            onClick={() => setIsExpanded(!isExpanded)}
-          />
-        </div>
 
-        <div className="menu-content">
+
           <div className="menu-items-container">
+
+            <div className="menu-item">
+                <img
+                src={isExpanded ? Left : Right}
+                alt="Toggle Menu"
+                className="menu-toggle-icon"
+                onClick={() => setIsExpanded(!isExpanded)}
+            />
+            </div>
             {menuItems.map((item, index) => (
               <div
                 key={index}
@@ -62,7 +64,7 @@ const Menu: React.FC<{ setView: (view: string) => void }> = ({ setView }) => {
               src={isExpanded ? Left : Right}
               alt="Toggle Menu"
               className="menu-toggle-icon"
-              onClick={() => setIsMobileMenuOpen(false)} 
+              onClick={() => setIsMobileMenuOpen(false)}
             />
           </div>
           <div className="mobile-menu-items">
@@ -72,7 +74,7 @@ const Menu: React.FC<{ setView: (view: string) => void }> = ({ setView }) => {
                 className="mobile-menu-item"
                 onClick={() => {
                   item.view && setView(item.view);
-                  setIsMobileMenuOpen(false); 
+                  setIsMobileMenuOpen(false);
                 }}
               >
                 <img src={item.icon} alt={item.label} />

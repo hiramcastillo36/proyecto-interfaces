@@ -1,19 +1,19 @@
 .menu {
     width: 74px;
-    height: auto;
-    background-color: var(--background); 
+    height: 100%;
+    background-color: var(--background);
     display: flex;
     flex-direction: column;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     transition: width 0.3s ease, background-color 0.3s ease;
     overflow: hidden;
-    padding: 14px;
+    justify-content: space-between;
   }
-  
+
   .menu-expanded {
     width: 200px;
   }
-  
+
   .menu-header {
     display: flex;
     align-items: center;
@@ -21,86 +21,89 @@
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
+    flex-direction: column;
+    height: 100%;
   }
-  
+
   .menu-header h2 {
-    color: var(--text); 
+    color: var(--text);
     margin: 0;
     font-size: 18px;
     text-align: left;
   }
-  
+
   .menu-toggle-icon {
     cursor: pointer;
     width: 24px;
     height: 24px;
-    filter: var(--icon-filter, none); 
+    filter: var(--icon-filter, none);
     transition: filter 0.3s ease;
   }
-  
+
   .menu-content {
     margin-top: 40px;
     width: 100%;
   }
-  
+
   .menu-items-container {
     padding: 30px 0;
     display: flex;
     flex-direction: column;
-    gap: 50px; 
+    gap: 50px;
+    height: 100%;
+    justify-content: space-between;
   }
-  
+
   .menu-item {
     display: flex;
     align-items: center;
     padding: 10px 25px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-    
   }
-  
+
   .menu-item:hover {
     background-color: var(--background-hover,  #A7A7A7);
   }
-  
+
   .menu-item img {
     width: 24px;
     height: 24px;
-    filter: var(--icon-filter, none); 
+    filter: var(--icon-filter, none);
     transition: filter 0.3s ease;
   }
-  
+
   .menu-item-label {
     font-size: 14px;
     font-weight: bold;
-    color: var(--text); 
+    color: var(--text);
     opacity: 0;
     transition: opacity 0.3s ease, color 0.3s ease;
     padding-left: 40px;
   }
-  
+
   .menu-expanded .menu-item-label {
     opacity: 1;
   }
-  
+
   .menu-item span {
     font-size: 14px;
     font-weight: bold;
-    color: var(--text); 
+    color: var(--text);
     opacity: 0;
     transition: opacity 0.3s ease, color 0.3s ease;
   }
-  
+
   .logout-expanded {
-    background-color: var(--background-secondary, #A7A7A7); 
+    background-color: var(--background-secondary, #A7A7A7);
     border-radius: 20px;
     transition: background-color 0.3s ease;
   }
-  
+
   .logout-expanded:hover {
     background-color: var(--background-hover, #d6d6d6);
   }
-    
+
   .mobile-menu-icon {
     display: none;
     cursor: pointer;
@@ -109,11 +112,11 @@
     margin: 10px 20px;
   }
 
-  .mobile-menu-item img, 
+  .mobile-menu-item img,
   .mobile-menu-icon img {
     width: 20px;
     height: 20px;
-    filter: var(--icon-filter, none); 
+    filter: var(--icon-filter, none);
   }
 
   .mobile-menu {
@@ -127,6 +130,8 @@
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
+    /* front */
+    z-index: 1;
   }
 
   .mobile-menu-item {

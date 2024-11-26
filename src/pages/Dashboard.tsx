@@ -22,7 +22,6 @@ function Dashboard() {
               <DoughnutChart name="ROBÓTICA" value={50} color="#183B6B" bg="var(--azul-claro)"/>
               <DoughnutChart name="WEB" value={94} color="#183B6B" bg="var(--azul-claro)"/>
             </div>
-            <div className="section"></div>
             <h1 className="section-title">PROMEDIOS GENERALES</h1>
             <div className="grid-container">
               <DoughnutChart name="BD" value={75} color="#008198" bg="#A7A7A7"/>
