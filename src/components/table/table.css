@@ -1,0 +1,39 @@
+.table {
+    width: 976px;
+    height: 235px;
+    border-collapse: collapse;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    transition: width 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
+}
+
+.table:hover {
+    max-height: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.table th {
+    background-color: var(--azul-oscuro);
+    font-weight: bold;
+    padding: 0.5em;
+    color: white;
+    font-size: 24px;
+    transition: font-size 0.3s ease;
+}
+
+.table:hover th {
+    font-size: 32px;
+}
+
+
+.table td {
+    padding: 0.5em;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 16px;
+    transition: font-size 0.3s ease;
+}
+
+.table:hover td {
+    font-size: 24px;
+}
