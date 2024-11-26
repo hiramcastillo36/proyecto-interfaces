@@ -1,50 +1,66 @@
-# React + TypeScript + Vite
+# Proyecto de Diseño de Interfaces
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto fue desarrollado como parte de la materia de Diseño de Interfaces, utilizando React + Vite con TypeScript como stack tecnológico principal.
 
-Currently, two official plugins are available:
+## Integrantes del Equipo
+- Hiram Castillo
+- Rosalinda Gamez
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Requisitos Previos
 
-## Expanding the ESLint configuration
+Asegúrate de tener instalado lo siguiente en tu sistema:
+- Node.js (versión 14.0 o superior)
+- npm (normalmente viene con Node.js)
+- TypeScript (versión 4.5 o superior)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Instalación
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clona este repositorio:
+```bash
+git clone <url-del-repositorio>
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. Navega al directorio del proyecto:
+```bash
+cd proyecto-interfaces
 ```
+
+3. Instala las dependencias:
+```bash
+npm install
+```
+
+## Ejecutar el Proyecto
+
+Para iniciar el servidor de desarrollo:
+
+```bash
+npm run dev
+```
+
+El proyecto estará disponible en `http://localhost:5173` por defecto.
+
+## Estructura del Proyecto
+
+```
+nombre-del-proyecto/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── App.tsx
+│   └── main.tsx
+├── .gitignore
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+```
+
+## Tecnologías Utilizadas
+
+- React 18
+- TypeScript 5.x
+- Vite
