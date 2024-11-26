@@ -26,8 +26,6 @@ const Menu: React.FC<{ setView: (view: string) => void }> = ({ setView }) => {
       <div className={`menu ${isExpanded ? "menu-expanded" : ""}`}>
         <div className="menu-header">
           {isExpanded && <h2>Dashboard</h2>}
-
-
           <div className="menu-items-container">
 
             <div className="menu-item">
